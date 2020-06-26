@@ -12,7 +12,7 @@ class MenuView: UIView {
     
     var chatsButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.midX - 80 , y: self.bounds.minY + 30, width: 60, height: 60)
+        btn.frame = CGRect(x: self.bounds.midX - 75 , y: self.bounds.minY + 25, width: 60, height: 60)
         btn.layer.cornerRadius = 33
         btn.setImage(UIImage(named: "ChatsButton"), for: .normal)
         return btn
@@ -34,7 +34,7 @@ class MenuView: UIView {
     
     var userButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.minX + 20, y: self.bounds.midY, width: 60, height: 60)
+        btn.frame = CGRect(x: self.bounds.minX + 10, y: self.bounds.midY, width: 60, height: 60)
         btn.setImage(UIImage(named: "UserButton"), for: .normal)
         return btn
     }
