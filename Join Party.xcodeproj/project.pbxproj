@@ -14,7 +14,8 @@
 		BD06F11824A4D85F00567BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD06F11724A4D85F00567BAC /* Assets.xcassets */; };
 		BD06F11B24A4D85F00567BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD06F11924A4D85F00567BAC /* LaunchScreen.storyboard */; };
 		BD06F12624A4D86000567BAC /* Join_PartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06F12524A4D86000567BAC /* Join_PartyTests.swift */; };
-		BDA61DE524A5FA6D009C3752 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */; };
+		BD78131824A64476008E8E16 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD78131724A64476008E8E16 /* MenuView.swift */; };
+		BDA61DE524A5FA6D009C3752 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA61DE424A5FA6D009C3752 /* MenuButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,8 @@
 		BD06F12124A4D86000567BAC /* Join PartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Join PartyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD06F12524A4D86000567BAC /* Join_PartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join_PartyTests.swift; sourceTree = "<group>"; };
 		BD06F12724A4D86000567BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
+		BD78131724A64476008E8E16 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		BDA61DE424A5FA6D009C3752 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 		BDA61DE324A5FA38009C3752 /* menu-button */ = {
 			isa = PBXGroup;
 			children = (
-				BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */,
+				BDA61DE424A5FA6D009C3752 /* MenuButton.swift */,
+				BD78131724A64476008E8E16 /* MenuView.swift */,
 			);
 			path = "menu-button";
 			sourceTree = "<group>";
@@ -211,8 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD06F11024A4D85A00567BAC /* MainViewController.swift in Sources */,
+				BD78131824A64476008E8E16 /* MenuView.swift in Sources */,
 				BD06F10C24A4D85A00567BAC /* AppDelegate.swift in Sources */,
-				BDA61DE524A5FA6D009C3752 /* MenuButtonView.swift in Sources */,
+				BDA61DE524A5FA6D009C3752 /* MenuButton.swift in Sources */,
 				BD06F11624A4D85A00567BAC /* Join_Party.xcdatamodeld in Sources */,
 				BD06F10E24A4D85A00567BAC /* SceneDelegate.swift in Sources */,
 			);
