@@ -14,6 +14,7 @@
 		BD06F11824A4D85F00567BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD06F11724A4D85F00567BAC /* Assets.xcassets */; };
 		BD06F11B24A4D85F00567BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD06F11924A4D85F00567BAC /* LaunchScreen.storyboard */; };
 		BD06F12624A4D86000567BAC /* Join_PartyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD06F12524A4D86000567BAC /* Join_PartyTests.swift */; };
+		BDA61DE524A5FA6D009C3752 /* MenuButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		BD06F12124A4D86000567BAC /* Join PartyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Join PartyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD06F12524A4D86000567BAC /* Join_PartyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Join_PartyTests.swift; sourceTree = "<group>"; };
 		BD06F12724A4D86000567BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				BD06F10B24A4D85A00567BAC /* AppDelegate.swift */,
 				BD06F10D24A4D85A00567BAC /* SceneDelegate.swift */,
 				BD06F10F24A4D85A00567BAC /* MainViewController.swift */,
+				BDA61DE324A5FA38009C3752 /* menu-button */,
 				BD06F11724A4D85F00567BAC /* Assets.xcassets */,
 				BD06F11924A4D85F00567BAC /* LaunchScreen.storyboard */,
 				BD06F11C24A4D85F00567BAC /* Info.plist */,
@@ -97,6 +100,14 @@
 				BD06F12724A4D86000567BAC /* Info.plist */,
 			);
 			path = "Join PartyTests";
+			sourceTree = "<group>";
+		};
+		BDA61DE324A5FA38009C3752 /* menu-button */ = {
+			isa = PBXGroup;
+			children = (
+				BDA61DE424A5FA6D009C3752 /* MenuButtonView.swift */,
+			);
+			path = "menu-button";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +212,7 @@
 			files = (
 				BD06F11024A4D85A00567BAC /* MainViewController.swift in Sources */,
 				BD06F10C24A4D85A00567BAC /* AppDelegate.swift in Sources */,
+				BDA61DE524A5FA6D009C3752 /* MenuButtonView.swift in Sources */,
 				BD06F11624A4D85A00567BAC /* Join_Party.xcdatamodeld in Sources */,
 				BD06F10E24A4D85A00567BAC /* SceneDelegate.swift in Sources */,
 			);
@@ -240,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -300,6 +313,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
