@@ -10,6 +10,35 @@ import UIKit
 
 class MenuView: UIView {
     
+    var chatsButton: UIButton{
+        let btn = UIButton()
+        btn.frame = CGRect(x: self.bounds.midX - 80 , y: self.bounds.minY + 30, width: 60, height: 60)
+        btn.layer.cornerRadius = 33
+        btn.setImage(UIImage(named: "ChatsButton"), for: .normal)
+        return btn
+    }
+    
+    var eventsButton: UIButton{
+        let btn = UIButton()
+        btn.frame = CGRect(x: self.bounds.midX + 20 , y: self.bounds.minY + 20, width: 60, height: 60)
+        btn.setImage(UIImage(named: "EventsButton"), for: .normal)
+        return btn
+    }
+    
+    var myEventsButton: UIButton{
+        let btn = UIButton()
+        btn.frame = CGRect(x: self.bounds.minX + 30, y: self.bounds.midY - 90, width: 60, height: 60)
+        btn.setImage(UIImage(named: "MyEventsButton"), for: .normal)
+        return btn
+    }
+    
+    var userButton: UIButton{
+        let btn = UIButton()
+        btn.frame = CGRect(x: self.bounds.minX + 20, y: self.bounds.midY, width: 60, height: 60)
+        btn.setImage(UIImage(named: "UserButton"), for: .normal)
+        return btn
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = UIColor(red: 0.90625, green: 0.30078, blue: 0.53906, alpha: 1)
@@ -21,10 +50,15 @@ class MenuView: UIView {
         self.layer.shadowRadius = 3
         self.layer.shadowOpacity = 0.5
         self.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
+        self.addSubview(chatsButton)
+        self.addSubview(userButton)
+        self.addSubview(eventsButton)
+        self.addSubview(myEventsButton)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
 }

@@ -11,8 +11,8 @@ import MapKit
 
 class MainViewController: UIViewController {
     
-    var menuButton = MenuButton()
-    var menuView = MenuView()
+    let menuButton = MenuButton()
+    let menuView = MenuView()
     var buttonStatus: Bool = false
     
     override func viewDidLoad() {
@@ -69,7 +69,7 @@ class MainViewController: UIViewController {
 //MARK: MainButton animations
     
     func MainButtonTouchDownAnimation(){
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0.07) {
             if self.menuButton.transform == .identity {
                 self.menuButton.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
             }
@@ -77,7 +77,7 @@ class MainViewController: UIViewController {
     }
     
     func MainButtonTouchUpInsideAnimation(){
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0.07) {
             self.menuButton.transform = CGAffineTransform(scaleX: 1, y: 1)
             if self.buttonStatus == true {
                 self.menuButton.layer.shadowOpacity = 0
@@ -91,7 +91,7 @@ class MainViewController: UIViewController {
     }
     
     func MainButtonTouchUpOutsideAnimation(){
-        UIView.animate(withDuration: 0.1) {
+        UIView.animate(withDuration: 0.07) {
             if self.menuButton.transform == .identity || self.buttonStatus == false {
                 self.menuButton.transform = .identity
             } else {
