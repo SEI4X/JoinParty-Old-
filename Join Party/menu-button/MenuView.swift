@@ -12,38 +12,51 @@ class MenuView: UIView {
     
     var chatsButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.midX - 75 , y: self.bounds.minY + 25, width: 60, height: 60)
+        btn.frame = CGRect(x: self.bounds.midX - 95 , y: self.bounds.minY + 30, width: 60, height: 60)
         btn.layer.cornerRadius = 33
-        btn.setImage(UIImage(named: "ChatsButton"), for: .normal)
+        let origImage = UIImage(named: "ChatsButton")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        btn.tintColor = .white
+        btn.setImage(tintedImage, for: .normal)
         return btn
     }
     
     var eventsButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.midX + 20 , y: self.bounds.minY + 20, width: 60, height: 60)
-        btn.setImage(UIImage(named: "EventsButton"), for: .normal)
+        btn.frame = CGRect(x: self.bounds.midX - 10 , y: self.bounds.minY + 12, width: 60, height: 60)
+        let origImage = UIImage(named: "EventsButton")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        btn.tintColor = .white
+        btn.setImage(tintedImage, for: .normal)
         return btn
     }
     
     var myEventsButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.minX + 30, y: self.bounds.midY - 90, width: 60, height: 60)
-        btn.setImage(UIImage(named: "MyEventsButton"), for: .normal)
+        btn.frame = CGRect(x: self.bounds.minX + 40, y: self.bounds.midY - 100, width: 60, height: 60)
+        let origImage = UIImage(named: "MyEventsButton")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        btn.tintColor = .white
+        btn.setImage(tintedImage, for: .normal)
+        
         return btn
     }
     
     var userButton: UIButton{
         let btn = UIButton()
-        btn.frame = CGRect(x: self.bounds.minX + 10, y: self.bounds.midY, width: 60, height: 60)
-        btn.setImage(UIImage(named: "UserButton"), for: .normal)
+        btn.frame = CGRect(x: self.bounds.minX + 10, y: self.bounds.midY - 20, width: 60, height: 60)
+        let origImage = UIImage(named: "UserButton")
+        let tintedImage = origImage?.withRenderingMode(.alwaysTemplate)
+        btn.tintColor = .white
+        btn.setImage(tintedImage, for: .normal)
         return btn
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor(red: 0.90625, green: 0.30078, blue: 0.53906, alpha: 1)
-        self.frame = CGRect(x: 0, y: 0, width: 350, height: 350)
-        self.layer.cornerRadius = 175
+        self.backgroundColor = UIColor(red: 0.09, green: 0.29, blue: 0.40, alpha: 1.00)
+        self.frame = CGRect(x: 0, y: 0, width: 380, height: 380)
+        self.layer.cornerRadius = 190
         
         // Shadow setup
         self.layer.shadowColor = UIColor.black.cgColor
@@ -55,6 +68,7 @@ class MenuView: UIView {
         self.addSubview(userButton)
         self.addSubview(eventsButton)
         self.addSubview(myEventsButton)
+        
     }
     
     required init?(coder: NSCoder) {
