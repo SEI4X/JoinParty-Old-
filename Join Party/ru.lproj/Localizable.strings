@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Join Party
+
+  Created by Alexei Mashkov on 26.06.2020.
+  Copyright © 2020 Alexei Mashkov. All rights reserved.
+*/
+
+"filter_button" = "Фильтр";
+"list_button" = "Список";
